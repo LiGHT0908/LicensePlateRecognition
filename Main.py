@@ -44,8 +44,10 @@ def ScanPlate(img):
     text = pytesseract.image_to_string(Cropped,config='--psm 11')
     return(text)
 
-path="cars+1.jpg"
+path="test2.jpg"
 img = cv2.imread(path)
+
+print(ScanPlate(img))
 
 
 
